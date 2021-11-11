@@ -1,0 +1,176 @@
+/* colors:
+red: f73b3b
+peachy cream: eec4b4
+beige: f6dcbd
+purple brown:594448
+faded black: 211c22
+*/
+:root {
+  --color1: #e5d224;
+  --color2: #8F95D3;
+  --color3: #3D0B37;
+  --eggshell: #F1F7ED;
+} 
+
+* {
+  /*box-sizing: border-box;*/
+}
+
+body {
+  padding: 0px;
+  color: #3D0B37;
+  background-color: #FFFFFF;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* <header> styles */
+header {
+  padding: 20px 35px;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/night-mountains.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-attachment: fixed;
+  background-position: 80%;
+  z-index: 9999;
+  width: 100%;
+}
+
+header a {
+  text-decoration: none;
+  color: #8F95D3;
+}
+
+header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color:#8F95D3;
+  margin: 0;
+}
+
+header nav {
+  margin: 7px 0;
+  padding: 10px 0 10px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.3vw;
+  color: #3D0B37;
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  color: #3D0B37;
+  margin-bottom: 5px;
+  padding: 20px 0 20px 0;
+  display: block;
+  /*flex: 1;*/
+}
+
+/* my work styles */
+.projects {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* .projects section-title {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.project {
+  margin: 10px;
+  background-color: #8F95D3;
+  /* flex: 1 auto; */
+}
+
+.projects h2 {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.projects h3 {
+  padding: 10px 0 10px 5px;
+  margin: 0;
+  line-height: 1.3;
+  font-size: 18pt;
+  font-style: bold;
+  color: #3D0B37;
+  display: flex;
+  flex-wrap: wrap;
+  float: inherit;
+}
+
+.projects p {
+  padding: 10px 0 10px 5px;
+  margin: 0;
+  line-height: 1.3;
+  color: #3D0B37;
+}
+
+.projects img {
+  width: 100%;
+  height: 200px;
+}
+
+/* runbuddy project */
+.runbuddy {
+  margin: 10px;
+  background-color: #8F95D3;
+  width: 300px;
+  height: 400px;
+}
+
+.runbuddy img {
+  width: 100%;
+  height: 300px;
+}
+
+/* contact me styles */
+.contact-me {
+  width: 100%;
+  margin: 0;
+  background-color: #e5d224;
+}
+.contact-me p, .contact-me a {
+  width: 100%;
+  margin: 0;
+  padding: 10px 0 10px 0;
+  line-height: 1.5;
+  font-size: 16px;
+  font-style: normal;
+}
+
+footer {
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 40px 35px;
+}
+
+footer h3 {
+  margin: 0;
+  padding: 10px 0 10px 0;
+}
