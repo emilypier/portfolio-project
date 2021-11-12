@@ -14,6 +14,7 @@ faded black: 211c22
 
 * {
   /*box-sizing: border-box;*/
+  margin-left: 10px;
 }
 
 body {
@@ -30,12 +31,11 @@ header {
   padding: 0;
   background-image: url("../images/night-mountains.png");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
+  background-size: cover;
+  background-position: 80%;
   position: relative;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -59,7 +59,7 @@ header h1 {
 
 header nav {
   margin: 7px 0;
-  padding: 10px 0 10px 0;
+  padding: 0;
 }
 
 header nav ul {
@@ -73,8 +73,15 @@ header nav ul {
 header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
-  font-size: 1.3vw;
-  color: #3D0B37;
+  font-size: 12;
+  color: #ffffff;
+}
+
+header nav ul li a:hover {
+  background:#8F95D3;
+  color: #ffffff;
+  border-radius: 23px;
+  text-shadow: none;
 }
 
 .section-title {
@@ -87,29 +94,36 @@ header nav ul li a {
   /*flex: 1;*/
 }
 
+/* about me styles */
+.about-me {
+  margin: 0;
+}
+
+
+
 /* my work styles */
 .projects {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex: wrap;
+  justify-content: left;
 }
-
-/* .projects section-title {
-  display: flex;
-  flex-wrap: wrap;
-} */
 
 .project {
   margin: 10px;
+  height: 300px;
+  width: 400px;
   background-color: #8F95D3;
-  /* flex: 1 auto; */
+  flex: column;
 }
 
 .projects h2 {
-  display: flex;
-  flex-wrap: wrap; 
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  color: #3D0B37;
+  margin-bottom: 5px;
+  padding: 20px 0 20px 0;
 }
 
 .projects h3 {
@@ -134,36 +148,70 @@ header nav ul li a {
 .projects img {
   width: 100%;
   height: 200px;
+  margin:0 ;
 }
 
 /* runbuddy project */
 .runbuddy {
   margin: 10px;
   background-color: #8F95D3;
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 300px;
 }
 
 .runbuddy img {
   width: 100%;
-  height: 300px;
+  height: 200px;
+}
+/* resume styles */
+.resume {
+  background-color: #3D0B37;
 }
 
 /* contact me styles */
 .contact-me {
-  width: 100%;
+  width: 300px;
+  height: 300px;
   margin: 0;
   background-color: #e5d224;
-}
-.contact-me p, .contact-me a {
-  width: 100%;
-  margin: 0;
-  padding: 10px 0 10px 0;
-  line-height: 1.5;
-  font-size: 16px;
-  font-style: normal;
+  border-radius: 400px;
+  position: relative;
 }
 
+.contact-me article {
+  position: absolute;
+  top: 23%;
+  left: 32%;
+  margin: -25px 0 0 -25px;
+}
+
+.contact-me h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    color: #3D0B37;
+    margin: 20px 0 20px 0;
+}
+
+.contact-me p, .contact-me a {
+  line-height: .5;
+  font-style: normal;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #3D0B37;
+}
+
+.contact-me a:hover {
+  width: 200px;
+  background-color: #8F95D3;
+  text-shadow: none;
+  text-align: center;
+}
+
+/* feeder style */
 footer {
   background-color: #FFFFFF;
   width: 100%;
