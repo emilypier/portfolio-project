@@ -12,10 +12,6 @@ faded black: 211c22
   --eggshell: #F1F7ED;
 } 
 
-* {
-  /*box-sizing: border-box;*/
-  margin-left: 10px;
-}
 
 body {
   padding: 0px;
@@ -88,7 +84,8 @@ header nav ul li a:hover {
   font-family: 'Poppins', sans-serif;
   font-size: 28px;
   color: #3D0B37;
-  padding: 10px 0 10px 0;
+  padding: 0;
+  margin: 0;
   display: block;
 }
 
@@ -101,17 +98,16 @@ header nav ul li a:hover {
   width: auto;
   display: flex;
   flex: wrap;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .about-me h2 {
   padding: 10px 0 10px 0;
   display: block;
-  float: left;
 }
 
 .about-me img {
-  float: left;
+  /* float: left; */
   margin-right: 15px;
   width: 150px;
   height: 150px;
@@ -148,7 +144,7 @@ header nav ul li a:hover {
   font-family: 'Poppins', sans-serif;
   font-size: 28px;
   color: #3D0B37;
-  margin-bottom: 5px;
+  margin: 0;
   padding: 10px 0 10px 0;
 }
 
@@ -194,9 +190,23 @@ header nav ul li a:hover {
   margin: 0;
 }
 
+.runbuddy a {
+  text-decoration: none;
+  color: #3D0B37;
+}
+
 /* resume styles */
-.resume {
+.resume, .resume h2{
   background-color: #3D0B37;
+  color: #ffffff;
+  padding: 10px 0;
+  border-radius: 10px;
+
+}
+
+.resume h2 {
+  background-color: #3D0B37;
+  color: #ffffff;
 }
 
 /* contact me styles */
@@ -204,6 +214,7 @@ header nav ul li a:hover {
   width: 300px;
   height: 300px;
   margin: 0;
+  padding: 10px 0;
   background-color: #e5d224;
   border-radius: 400px;
   position: relative;
