@@ -83,9 +83,9 @@ header nav ul li a:hover {
 }
 
 .section-title {
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif;
   font-size: 28px;
-  color:var(--color2);
+  color:var(--color2); */
   width: 500px;
   height: 400px;
   padding: 0;
@@ -115,14 +115,19 @@ h2 {
   height: 250px;
   width: auto;
   display: flex;
-  flex: wrap;
   align-content: left;
-  position: relative;
-  left: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-me h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  color:var(--color2);
 }
 
 .about-me .info {
-  width: 1000px;
+  width: 1050px;
   height: 400px;
   background-color:rgb(142, 142, 231);
   display: inline;
@@ -163,45 +168,47 @@ h2 {
 /* my work styles */
 /* runbuddy project */
 
-.runbuddy-left {
+.section-work {
   display: flex;
-  justify-content: flex-start;
-  float: right;
+  justify-content: center;
+}
+.section-work h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  color:var(--color2);
 }
 
-.runbuddy {
-  margin: 10px;
-  background-color:var(--color1);
-  height: 400px;
-  width: 820px;
-  display: block;
-}
-
-.runbuddy img {
+.section-work img {
   width: 100%;
   height: 300px;
   margin: 0;
 }
 
-.runbuddy a {
+.parent-for-all-projects {
+}
+
+.big-project {
+  display: flex;
+  margin: 10px;
+  background-color:var(--color1);
+  height: 400px;
+  width: 820px;
+}
+
+.big-project a {
   text-decoration: none;
   color:var(--color2);
 }
 
-.projects-left {
+.big-project img {
+  height: 300px;
+  width: 600px;
+}
+.parent4projects {
   display: flex;
-  justify-content: flex-start;
-  float: right;
 }
 
-.projects {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex: wrap;
-  flex-direction: row;
-  flex: 2;
-  justify-content: left;
+.parent2projects{
 }
 
 .project {
@@ -210,6 +217,20 @@ h2 {
   width: 400px;
   background-color:var(--color1);
 }
+
+.project img {
+  height: 200px;
+  width: 400px;
+}
+
+.project p, .big-project p{
+  padding: 10px 0 10px 5px;
+  margin: 0;
+  line-height: 1.3;
+  color:var(--color2);
+}
+
+/* 
 
 .projects h2 {
   font-family: 'Poppins', sans-serif;
@@ -227,15 +248,7 @@ h2 {
   font-style: bold;
   color:var(--color2);
   display: flex;
-  flex-wrap: wrap;
   float: inherit;
-}
-
-.projects p, .runbuddy p{
-  padding: 10px 0 10px 5px;
-  margin: 0;
-  line-height: 1.3;
-  color:var(--color2);
 }
 
 .all-projects {
@@ -276,7 +289,7 @@ h2 {
   color: var(--color2);
   padding: 10px 0;
   margin: 5px 0px;
-  display: inline;
+  display: flex;
 }
 
 .resume-left {
@@ -288,14 +301,6 @@ h2 {
 .resume p {
   margin: 4px 0;
 }
-
-/* .resume h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 28px;
-  color: var(--color3);
-  margin: 5px 10px;
-  display: block;
-} */
 
 .resume h3 {
   font-family: 'Poppins', sans-serif;
