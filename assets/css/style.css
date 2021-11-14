@@ -5,9 +5,13 @@
   --color4: #EBF5EE;
 } 
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  display: block;
   color: var(--color2);
   background-color: var(--color4);
   font-family: Helvetica, Arial, sans-serif;
@@ -18,12 +22,10 @@ header {
   padding: 20px 35px;
   margin: 0;
   padding: 0;
-  background-image: url("../images/night-mountains.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 80%;
+  background-color: var(--color2);
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -46,7 +48,7 @@ header h1 {
 }
 
 header nav {
-  padding: 0;
+  margin: 7px 0;
 }
 
 header nav ul {
@@ -104,8 +106,6 @@ h2 {
 
 .about-me-info {
   display: block; /* was flex bc parent was flex */
-  width: 640px;
-  height: 100px;
 }
 
 .section-about-me h2 {
@@ -115,9 +115,10 @@ h2 {
 }
 
 .section-about-me .about-me-info {
-  width: 640px;
+  width: 840px;
   height: 200px;
-  display: inline;
+  display: flex;
+  justify-content: flex-start;
   left: 0;
   top: 0;
   bottom: 0;
@@ -134,20 +135,19 @@ h2 {
   top: 0;
   bottom: 0;
   right: 0;
-  margin: auto;
 }
 
 .about-me p {
-  width: 500px;
   height: 100px;
   padding: 0;
   margin: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  display: inline-block;
+  display: block;
 }
+
+.bio {
+  width: 300px;
+}
+
 /* about me END */
 
 /* my work START */
@@ -179,27 +179,18 @@ h2 {
   margin: 0;
 }
 
-.parent-for-all-projects {
-}
-
 .big-project {
-  display: flex;
   margin: 10px;
-  background-color:var(--color1);
-  height: 400px;
-  width: 620px;
-  display: block; /*was flex bc parent was flex*/
-}
+  height: 300px;
+  width: 820px;
+  position:relative;
+  }
 
 .big-project a {
   text-decoration: none;
   color:var(--color2);
 }
 
-.big-project img {
-  height: 300px;
-  width: 620px;
-}
 .parent4projects {
   display: flex;
 }
@@ -208,15 +199,22 @@ h2 {
 }
 
 .project {
-  margin: 10px;
-  height: 300px;
-  width: 300px;
-  background-color:var(--color1);
+margin: 10px;
+height: 300px;
+width: 400px;
+position:relative;
 }
 
-.project img {
-  height: 200px;
-  width: 300px;
+#text {
+  position: absolute; 
+  width: 200px;
+  height: 120px;
+  left: 0px; 
+  right: 20px; 
+  top: 150px; 
+  bottom: 10px; 
+  background:var(--color1); 
+  color:var(--color3);
 }
 
 .project p, .big-project p{
@@ -243,11 +241,10 @@ h2 {
 }
 
 .parent-for-resume {
-  background-color: var(--color4);
   color: var(--color2);
   padding: 10px 0;
   margin: 5px 0px;
-  width: 640px;
+  width: 840px;
 }
 
 .resume p {
@@ -273,7 +270,7 @@ h2 {
   display: block;
   flex-direction: column;
   margin-bottom: 30px;
-  width: 500px;
+  width: 700px;
 }
 
 .resume ul {
@@ -283,10 +280,25 @@ h2 {
 
 
 /* contact me START */
+.section-contact-me h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  color:var(--color2);
+  width: 132px;
+  text-align: right;
+}
+
 .section-contact-me {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.contact-info {
+  display: inline;
+  padding: 10px 0;
+  margin: 5px 0px;
+  width: 840px;
 }
 
 .contact-info ul {
@@ -335,3 +347,145 @@ footer p {
   text-align: center;
 }
 /*footer END*/
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: block;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  header nav ul {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+  }
+
+  header nav ul li a {
+    font-size: 15px;
+  }
+
+  .section-about-me, .section-work, .section-resume, .section-contact-me {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin: 4px 0;
+  }
+
+  .section-resume h3, h4, ul, p {
+    text-align: left;
+  }
+
+  .about-me-info img p a {
+    position: relative;
+    margin: 4px 0;
+    padding: 0;
+  }
+
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .section-about-me {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: block;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  header nav ul {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+  }
+
+  header nav ul li a {
+    font-size: 15px;
+  }
+
+  .section-about-me, .section-work, .section-resume, .section-contact-me {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin: 4px 0;
+  }
+
+  .section-resume h3, h4, ul, p {
+    text-align: left;
+  }
+
+  .about-me-info img p a {
+    position: relative;
+    margin: 4px 0;
+    padding: 0;
+  }
+
+  .about-me-info {
+    display: flex;
+  }
+
+  .section-about-me p {
+    flex: 100%;  
+  }
+
+  .parent-for-all-projects {
+    display: block;
+    align-content: center;
+  }
+
+  .big-project {
+    flex: 0 40%;
+    justify-content: center;
+  }
+
+  .trainer {
+    flex: 0 70%;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  .about-me-info img p a {
+    position: relative;
+    margin: 4px 0;
+    padding: 0;
+  }
+
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info > * {
+    flex: 0 100%;
+  }
+}
