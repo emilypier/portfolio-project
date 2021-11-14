@@ -96,25 +96,28 @@ h2 {
 /* about me START */
 .section-about-me {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  width: auto;
+  height: 300px;
 }
 
 .about-me-info {
   display: block; /* was flex bc parent was flex */
+  width: 640px;
+  height: 100px;
 }
 
-.about-me h2 {
+.section-about-me h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 28px;
   color:var(--color2);
 }
 
-.about-me .info {
-  width: 1050px;
-  height: 400px;
-  background-color:rgb(142, 142, 231);
+.section-about-me .about-me-info {
+  width: 640px;
+  height: 200px;
   display: inline;
-  display: flex;
   left: 0;
   top: 0;
   bottom: 0;
@@ -150,6 +153,7 @@ h2 {
 /* my work START */
 .section-work {
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -227,6 +231,7 @@ h2 {
 /* resume START */
 .section-resume {
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -234,8 +239,8 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 28px;
   color:var(--color2);
+  width: 132px;
 }
-
 
 .parent-for-resume {
   background-color: var(--color4);
@@ -262,16 +267,6 @@ h2 {
   font-size: 20px;
   color: var(--color2);
   margin: 5px 0;
-}
-
-.details {
-  margin: 10px;
-  width: 200px;
-}
-
-.summary {
-  margin: 4px 0;
-  width: 500px;
 }
 
 .resume-item {
