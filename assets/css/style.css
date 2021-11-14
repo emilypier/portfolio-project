@@ -283,43 +283,41 @@ h2 {
 
 
 /* contact me START */
-.contact-me {
-  width: 300px;
-  height: 300px;
-  margin: 0;
-  padding: 10px 0;
-  background-color: var(--color3);
-  border-radius: 500px;
-  position: relative;
+.section-contact-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.contact-me article {
-  position: absolute;
-  top: 23%;
-  left: 32%;
-  margin: -25px 0 0 -25px;
+.contact-info ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 
-.contact-me p, .contact-me a {
+.contact-info li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 12;
+  color: var(--color2);
+}
+
+.contact-info a:hover {
+  background:#8F95D3;
+  color: #ffffff;
+  border-radius: 23px;
+}
+
+.contact-info p, .contact-info a {
   line-height: 1;
-  font-style: normal;
+  font-style: lighter;
   font-size: 16px;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
   text-decoration: none;
-  color: #3D0B37;
-  background-color: #e7de8d;
 }
 
-.contact-me a:hover {
-  width: 200px;
-  background-color: #A85B61;
-  text-shadow: none;
-  text-align: center;
-  background-color: #e0dec7;
-}
 /*contact me END*/
 
 /* feeder START */
