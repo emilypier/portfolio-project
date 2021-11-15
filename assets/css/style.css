@@ -37,14 +37,14 @@ header {
 
 header a {
   text-decoration: none;
-  color: var(--color3);
+  color: var(--color4);
 }
 
 header h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 36px;
   color: var(--color3);
-  margin: 0;
+  margin: 0 10px;
 }
 
 header nav {
@@ -54,8 +54,7 @@ header nav {
 header nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   list-style: none;
 }
 
@@ -67,10 +66,10 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background:#8F95D3;
+  background: var(--color1);
   color: #ffffff;
   border-radius: 23px;
-  text-shadow: none;
+  text-shadow: .5;
 }
 
 .section-title {
@@ -88,9 +87,30 @@ header nav ul li a:hover {
 
 h2 {
   display: flex;
-  align-items: center;
+  align-items: center; 
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  color:var(--color2);
+  width: 132px;
+  text-align: right;
 }
 /* header END */
+
+/* hero START */
+.hero {
+  width: 100%;
+  height: 300px;
+  background-image: url("../images/night-mountains.png");
+  background-size: cover;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 25%;
+}
+/* hero END */
 
 /* about me START */
 .section-about-me {
@@ -105,17 +125,12 @@ h2 {
   display: block; /* was flex bc parent was flex */
 }
 
-.section-about-me h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 28px;
-  color:var(--color2);
-}
-
 .section-about-me .about-me-info {
   width: 840px;
   height: 200px;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   left: 0;
   top: 0;
   bottom: 0;
@@ -154,12 +169,6 @@ h2 {
   justify-content: center;
 }
 
-.section-work h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 28px;
-  color:var(--color2);
-}
-
 .section-work h3 {
   font-family: 'Poppins', sans-serif;
   padding: 10px 0 10px 5px;
@@ -168,6 +177,7 @@ h2 {
   font-size: 18pt;
   font-style: bold;
   color:var(--color2);
+  text-align: left;
 }
 
 .section-work img {
@@ -223,7 +233,6 @@ background-color: var(--color1);
   color:var(--color2);
 }
 
-
 .section-work a:hover {
   content: "";
   opacity: .5;
@@ -243,13 +252,6 @@ background-color: var(--color1);
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-.section-resume h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 28px;
-  color:var(--color2);
-  width: 132px;
 }
 
 .parent-for-resume {
@@ -292,13 +294,7 @@ background-color: var(--color1);
 
 
 /* contact me START */
-.section-contact-me h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 28px;
-  color:var(--color2);
-  width: 132px;
-  text-align: right;
-}
+
 
 .section-contact-me {
   display: flex;
@@ -328,7 +324,7 @@ background-color: var(--color1);
 }
 
 .contact-info a:hover {
-  background:#8F95D3;
+  background: var(--color1);
   color: #ffffff;
   border-radius: 23px;
 }
@@ -360,6 +356,9 @@ footer p {
 }
 /*footer END*/
 
+.flex-row {
+  display: flex;
+}
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
@@ -375,6 +374,20 @@ footer p {
     width: 100%;
     text-align: center;
     display: block;
+    margin: 0;
+  }
+
+  h2 {
+    width: 170px;
+    margin-bottom: 10px;
+    justify-content: center;
+    vertical-align: text-top;
+  }
+
+  .flex-row { /*to make headings centered*/
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 
   header nav ul {
@@ -422,9 +435,6 @@ footer p {
   header {
     padding-bottom: 0;
     justify-content: center;
-    align-items: center;
-    position: relative;
-    display: block;
   }
 
   header h1 {
@@ -442,6 +452,10 @@ footer p {
 
   header nav ul li a {
     font-size: 15px;
+  }
+
+  h2 {
+    flex: 0 100;
   }
 
   .section-about-me, .section-work, .section-resume, .section-contact-me {
