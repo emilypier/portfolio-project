@@ -1,4 +1,19 @@
-## My Portfolio
+# Emily Pierson - Portfolio
+## Description
+A website that offers links to sections about me, my work, and contact information.
+
+## Image
+![Image of my portfolio.](/assets/portfolio-screenshot.png)
+
+## Built With
+* HTML
+* CSS
+
+## Website
+https://emilypier.github.io/portfolio-project/
+
+## Made by 
+Emily Pierson
 
 * presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
 
