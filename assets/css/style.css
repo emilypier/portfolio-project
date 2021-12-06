@@ -25,6 +25,7 @@ header {
   background-color: var(--color2);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   position: -webkit-sticky;
   position: sticky;
@@ -49,12 +50,12 @@ header h1 {
 
 header nav {
   margin: 7px 0;
+  flex-direction: center;
 }
 
 header nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   list-style: none;
 }
 
@@ -113,7 +114,7 @@ h2 {
 /* hero END */
 
 /* about me START */
-.section-about-me {
+#about-me {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -125,7 +126,7 @@ h2 {
   display: block; /* was flex bc parent was flex */
 }
 
-.section-about-me .about-me-info {
+#about-me .about-me-info {
   width: 840px;
   height: 200px;
   display: flex;
@@ -137,7 +138,7 @@ h2 {
   right: 0;
 }
 
-.section-about-me img {
+#about-me img {
   margin-right: 15px;
   width: 150px;
   height: 150px;
@@ -155,21 +156,16 @@ h2 {
   margin: 0;
   display: block;
 }
-
-.bio {
-  width: 300px;
-}
-
 /* about me END */
 
 /* my work START */
-.section-work {
+#my-work {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.section-work h3 {
+#my-work h3 {
   font-family: 'Poppins', sans-serif;
   padding: 10px 0 10px 5px;
   margin: 0;
@@ -180,7 +176,7 @@ h2 {
   text-align: left;
 }
 
-.section-work img {
+#my-work img {
   width: 100%;
   height: 300px;
   margin: 0;
@@ -201,9 +197,6 @@ h2 {
 
 .parent4projects {
   display: flex;
-}
-
-.parent2projects{
 }
 
 .project {
@@ -233,7 +226,7 @@ background-color: var(--color1);
   color:var(--color2);
 }
 
-.section-work a:hover {
+#my-work a:hover {
   content: "";
   opacity: .5;
   top: 0;
@@ -248,7 +241,7 @@ background-color: var(--color1);
 
 
 /* resume START */
-.section-resume {
+#resume {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -261,42 +254,43 @@ background-color: var(--color1);
   width: 840px;
 }
 
-.resume p {
+#resume p {
   margin: 4px 0;
 }
 
-.resume h3 {
+#resume h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   color: var(--color2);
-  margin: 5px 10px;
   display: inline;
+  margin: 5px 0;
 }
 
-.resume h4 {
+#resume h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   color: var(--color2);
-  margin: 5px 0;
 }
 
 .resume-item {
   display: block;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   width: 700px;
 }
 
-.resume ul {
+#resume p {
+  margin: 5px 0;
+}
+
+#resume ul {
   line-height: 1.5;
 }
 /*resume END*/
 
 
 /* contact me START */
-
-
-.section-contact-me {
+#contact-me {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -373,8 +367,6 @@ footer p {
 @media screen and (max-width: 980px) {
   header {
     padding-bottom: 0;
-    justify-content: center;
-    align-items: center;
     position: relative;
     display: block;
   }
@@ -412,20 +404,12 @@ footer p {
     justify-content: space-between;
   }
 
-  /* .section-about-me, .section-work, .section-resume, .section-contact-me {
-    display: block;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    margin: 4px 0;
-  } */
-
   .parent-for-resume {
     justify-content: center;
     margin-left: 10px;
   }
 
-  .section-resume h3, h4, ul, p {
+  #resume h3, h4, ul, p {
     text-align: left;
   }
 
@@ -440,7 +424,7 @@ footer p {
     width: 100%;
   }
   
-  .section-about-me {
+  #about-me {
     text-align: center;
     justify-content: center;
   }
@@ -474,7 +458,10 @@ footer p {
     flex: 0 100;
   }
 
-  .section-about-me, .section-work, .section-resume, .section-contact-me {
+  #about-me,
+  #my-work,
+  #resume,
+  #contact-me {
     display: block;
     text-align: center;
     justify-content: center;
@@ -485,7 +472,7 @@ footer p {
     flex: 1;
   }
 
-  .section-resume h3, h4, ul, p {
+  #resume h3, h4, ul, p {
     text-align: left;
   }
 
@@ -499,7 +486,7 @@ footer p {
     display: flex;
   }
 
-  .section-about-me p {
+  #about-me p {
     flex: 100%;  
   }
 
