@@ -3,7 +3,7 @@
 A website that offers links to sections about me, my work, and contact information.
 
 ## Image
-![Image of my portfolio.](/assets/portfolio-screenshot.png)
+![Image of my portfolio.](/assets/images/portfolio-screenshot.png)
 
 ## Built With
 * HTML
