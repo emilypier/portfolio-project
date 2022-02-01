@@ -72,15 +72,13 @@ header nav ul li a:hover {
   border-radius: 23px;
 }
 
-.section-title {
-  width: 500px;
-  height: 400px;
+.title {
+  width: 100;
+  height: 100px;
   padding: 0;
-  margin: 0 .5px;;
+  margin: 0 .5px;
   display: flex;
-  justify-content: flex-end;
-  align-items: stretch;
-  text-align: right;
+  text-align: center;
 }
 
 h2 {
@@ -118,15 +116,10 @@ h2 {
   height: 200px;
 }
 
-.about-me-info {
-  display: block; /* was flex bc parent was flex */
-}
-
-#about-me .about-me-info {
-  width: 840px;
+.about-me-info{
+  width: 600px;
   height: 200px;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   left: 0;
   top: 0;
@@ -134,7 +127,7 @@ h2 {
   right: 0;
 }
 
-#about-me img {
+.about-me img {
   margin-right: 15px;
   width: 150px;
   height: 150px;
@@ -154,44 +147,27 @@ h2 {
 }
 
 /* my work ---------------------------------- */
-#my-work {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-#my-work h3 {
+.my-work h3 {
   font-family: 'Poppins', sans-serif;
   padding: 10px 5px;
   margin: 0;
   line-height: 1.3;
   font-size: 18pt;
   font-style: bold;
-  color:white;
+  color: var(--color3);
   text-align: left;
 }
 
-#my-work img {
+.my-work img {
   width: 100%;
-  height: 280px;
+  height: 100px;
   margin: 0;
   opacity: .5;
 }
 
-.big-project {
-  margin: 10px;
-  height: 400px;
-  width: 700px;
-  position:relative;
-  }
-
-.big-project a {
-  text-decoration: none;
-  color:white;
-}
-
-.parent4projects {
-  display: flex;
+#projects-container img {
+  width: 150px;
+  height: 90px;
 }
 
 .project {
@@ -227,7 +203,7 @@ h2 {
 } 
 
 /* resume ---------------------------------- */
-#resume {
+.resume {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -236,46 +212,27 @@ h2 {
 .parent-for-resume {
   color: var(--color2);
   padding: 10px 0;
-  margin: 5px 0px;
   width: 840px;
 }
 
-#resume p {
-  margin: 4px 0;
-}
-
-#resume h3 {
+.resume h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   color: var(--color2);
-  display: inline;
-  margin: 5px 0;
 }
 
-#resume h4 {
+.resume h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   color: var(--color2);
-}
-
-.resume-item {
-  display: block;
-  flex-direction: column;
-  margin-bottom: 60px;
-  width: 700px;
-}
-
-#resume p {
-  margin: 5px 0;
 }
 
 #resume ul {
   line-height: 1.5;
 }
 
-
 /* contact me ---------------------------------- */
-#contact-me {
+.contact-me {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -404,7 +361,7 @@ footer p {
     width: 100%;
   }
   
-  #about-me {
+  .about-me {
     text-align: center;
     justify-content: center;
   }
@@ -419,7 +376,7 @@ footer p {
 
   header h1 {
     width: 100%;
-    text-align: center;x
+    text-align: center;
     display: block;
   }
 
@@ -463,7 +420,7 @@ footer p {
   }
 
   .about-me-info {
-    display: flex;
+    word-wrap: normal;
   }
 
   #about-me p {
