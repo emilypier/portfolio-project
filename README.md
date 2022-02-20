@@ -1,28 +1,32 @@
-# Emily Pierson - Portfolio
+# Emily Pierson Portfolio
+![MIT license](https://img.shields.io/badge/license-MIT-yellow)
+
+# Table of Contents 
+
+* [Description](#description)
+
+* [License](#license)
+
+* [Questions](#questions)
+
+
 ## Description
 A website that offers links to sections about me, my work, and contact information.
 
 ## Image
+View my [portfolio](https://emilypier.github.io/portfolio-project/).
+
 ![Image of my portfolio.](/assets/images/portfolio-screenshot.png)
+
+## License
+This application is covered under MIT license.
 
 ## Built With
 * HTML
 * CSS
 
-## Website
-https://emilypier.github.io/portfolio-project/
+## Questions
+Made by Emily Pierson.
+If you have questions, you can reach me at piersoee@gmail.com. 
+Visit my [GitHub](https://github.com/emilypier).
 
-## Made by 
-Emily Pierson
-
-* presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-
-* links in nav scrolls to the corresponding section
-
-* link to the section about their work scrolls to a section with titled images of the developer's applications
-
-* first application's image should be larger in size than the others
-
-* taken to that deployed application you click on the images of the applications
-
-* presented with a responsive layout that adapts to my viewport when viewport is resized
