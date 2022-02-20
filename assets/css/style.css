@@ -5,8 +5,8 @@ font-family: 'Orelega One', cursive;  */
 :root {
   --color1: #78A1BB;
   --color2: #4C4B63;
-  --color3: #CE7DA5;
-  --color4: #EBF5EE;
+  --color3: #EBF5EE;
+  --color4: #CE7DA5;
 } 
 
 * {
@@ -19,6 +19,7 @@ body {
   color: var(--color2);
   background-color: var(--color4);
   font-family: Helvetica, Arial, sans-serif;
+  font-size: 1e,;
 }
 
 /* header  ----------------------------------*/
@@ -26,12 +27,11 @@ header {
   height: 90px;
   background-color: var(--color2);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
   background-attachment: fixed;
   background-position: 80%;
   z-index: 9999;
@@ -50,23 +50,19 @@ header h1 {
   margin: 0 10px;
 }
 
-header nav {
-  margin: 7px 0;
-  flex-direction: center;
-}
-
 header nav ul {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   list-style: none;
 }
 
-header nav ul li a {
-  padding: 10px 15px;
+header nav li a {
+  padding: 10px;
   font-weight: lighter;
   font-size: 12;
   color: #ffffff;
   font: 'Barlow Semi Condensed', sans-serif;
+  align-items: center;
 }
 
 header nav ul li a:hover {
@@ -101,7 +97,7 @@ h2 {
   background-size: cover;
   display: flex;
   justify-content: right;
-  align-items: center;
+
   flex-wrap: wrap;
   align-items: flex-start;
   background-attachment: fixed;
@@ -236,7 +232,7 @@ h2 {
   text-decoration: none;
 }
 
-/* feeder ---------------------------------- */
+/* footer ---------------------------------- */
 footer {
   background-color:var(--color2);
   width: 100%;
