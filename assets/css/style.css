@@ -26,7 +26,6 @@ body {
 header {
   height: 90px;
   background-color: var(--color2);
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -236,8 +235,9 @@ h2 {
 footer {
   background-color:var(--color2);
   width: 100%;
-  padding: 40px 35px;
-  margin: 5px;
+  /* padding: 40px 35px; */
+  display: flex;
+  /* margin: 5px; */
 }
 
 footer p {
