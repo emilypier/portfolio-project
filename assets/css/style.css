@@ -4,9 +4,9 @@ font-family: 'Orelega One', cursive;  */
 
 :root {
   --color1: #78A1BB;
-  --color2: #4C4B63;
+  --color2: #7180e5; /* #4C4B63; */
   --color3: #EBF5EE;
-  --color4: #CE7DA5;
+  --color4: #c2c21d; /* #CE7DA5; */
   --shadow: #2a2a36;
 } 
 
